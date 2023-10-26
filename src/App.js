@@ -2,29 +2,9 @@ import React, { useState, useEffect } from 'react';
 import figmaImage from './figma.png';
 import './App.css';
 import ReactDOM from 'react-dom';
+import useTypewriter from './useTypewriter';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-const useTypewriter = (text, speed = 50) => {
-  const [displayText, setDisplayText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    let typingInterval;
-
-    if (currentIndex < text.length) {
-      typingInterval = setInterval(() => {
-        setDisplayText(prevText => prevText + text[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
-      }, speed);
-    }
-
-    return () => {
-      clearInterval(typingInterval);
-    };
-  }, [currentIndex, speed, text]);
-
-  return displayText;
-};
 
 function App() {
   const name = useTypewriter("Jali Purcell", 60); // Replace 'Your Name' with your actual name
