@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>{name}</h1>
-        <p>Data Driven, SQL Savvy, Software Engineer in the making.</p>
+        <p>Data Driven, Software Engineer in the making.</p>
       </header>
       <main className="App-content">
         <section className="App-section">
