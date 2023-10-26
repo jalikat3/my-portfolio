@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import figmaImage from './figma.png';
 import './App.css';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 const useTypewriter = (text, speed = 50) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
