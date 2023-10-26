@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -36,3 +37,136 @@
     transform: rotate(360deg);
   }
 }
+ h1 {
+  font-size: calc(10px + 4vmin);
+  color: #61dafb; /* Change the color to your preference */
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-right: 2px solid white;
+  padding-right: 5px; /* Cursor animation effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 50%; /* Limit the width of the h1 element */
+  margin: 0 auto; /* Center the h1 element horizontally */
+  /*animation: typing 1s steps(5, end), blink-caret 0.5s step-end infinite;*/
+  animation: blink-caret infinite;
+} 
+.edu-header {
+  font-size: calc(10px + 4vmin);
+  color: #282c34; /* Change the color to your preference */
+  margin-bottom: 10px;
+  padding-top: 50px;
+  overflow: hidden;
+  border-right: 2px solid white;
+  padding-right: 5px; /* Cursor animation effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 50%; /* Limit the width of the h1 element */
+  margin: 0 auto; /* Center the h1 element horizontally */
+  /*animation: typing 1s steps(5, end), blink-caret 0.5s step-end infinite;*/
+  animation: blink-caret infinite;
+} 
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content, .right-content {
+  width: 100%; /* Adjust the width of the content divs */
+  flex: 1;
+}
+.job {
+  display: flex;
+  align-items: center;
+  margin-top:10px;
+  margin-bottom: 20px; /* Add some space between job entries */
+}
+
+.job .job-info {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left:10px;
+   /* Add some space between the box and the bullet points */
+}
+
+.job .job-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.job h3 {
+  font-size: 1.2rem;
+}
+
+.job h4 {
+  margin-top: 5px; /* Add a small margin between company and job title */
+  font-size: 1.1rem;
+}
+
+.job ul {
+  list-style-position: inside;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  vertical-align: center;
+  justify-content: center;
+  height: 100%; /* Ensure the list takes the full height of the container */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+.job ul li {
+  text-align: left;
+  padding-right: 15px;
+  margin-bottom: 10px; /* Add some space between list items */
+}
+.image-container {
+  display: flex;
+  padding-right: 20%;
+  justify-content: center; 
+  align-items: center; 
+  height: 500px; 
+  width: 500px; 
+  
+}
+
+li.image-container {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  height: 500px; /* Set a fixed height for the container */
+  width: 500px; /* Set a fixed width for the container */
+  border: 1px solid #ccc; /* Optional: Add a border for visualization */
+}
+
+.flexible-image {
+  justify-self: center;
+  flex: 1; /* Allow the image to grow and shrink within the container */
+  max-width: 100%; /* Ensure the image does not exceed its original size */
+  max-height: 100%; /* Ensure the image does not exceed its original size */
+}
+footer{
+  padding:10px;
+}
+
+
