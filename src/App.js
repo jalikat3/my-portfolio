@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import figmaImage from './figma.png';
+import digifarmImage from './digifarm.png';
 import './App.css';
 import ReactDOM from 'react-dom';
 import useTypewriter from './useTypewriter';
@@ -42,22 +43,18 @@ function App() {
         </section>
         <section className="App-section">
           <h2>Leadership at Drury</h2>
-          <div className="side-by-side">
-          <div className = "left-content">
+          
           <ul>
-            <h4>President of DUTV and Senior Videography Staff</h4>
+            <h3>President of DUTV and Senior Videography Staff</h3>
             <p>Completed video projects for clients.</p>
             <p>Director of Photography in Drury Lane Film Festival.</p>
           </ul>
-          </div>
-          </div>
-          <div className="right-content">
+          
           <ul>
-            <h4>President of Math and Computer Science Club</h4>
-            <p>Completed video projects for clients.</p>
-            <p>Director of Photography in Drury Lane Film Festival.</p>
+            <h3>President of Math and Computer Science Club</h3>
+            <p>1 year as vice president and 2 years as president.</p>
+            <p>Plan monthly events including alumni guest speakers, in-house hackathons, and workshops.</p>
           </ul>
-          </div>
           
         </section>
         <section className="App-section">
@@ -103,29 +100,27 @@ function App() {
           
           <div className="side-by-side">
           <div className="left-content">
+          <div>
           <h3>Senior Research and Development</h3>
           <h4>Project eMission</h4>
           <ul>
             <p>Eco-Conscious Carbon Footprint Tracker written in Flutter.</p>
             <p>Development began in January, 2023. Implementation began in August, 2023.</p>
             <a href="https://youtu.be/TznYUGlRwF4">Demo Video</a>
-            {/* <li class="image-container">
             <img src={figmaImage} alt="Figma Logo" className="flexible-image" />
-            </li> */}
           </ul>
-          
-
-          
+          </div>
           </div>
           <div className="right-content">
-          <h3>Machine Learning</h3>
-          <h4>Non-Linear Regression Exploration</h4>
+          <h3>CCSC: CP Hackathon</h3>
+          <h4>First Place in Spring 2023 for our app: Digifarm Marketplace</h4>
           <ul>
-            <a href="https://github.com/jalikat3/housing-repo">Github Repository</a>
-            {/* <li class="image-container">
-            <img src={figmaImage} alt="Figma Logo" className="flexible-image" />
-            </li> */}
+          <p>Sought to address challenges of food waste and high grocery prices.</p>
+          <p>Digital Marketplace to buy local crops and goods.</p>
+          <a href="https://www.youtube.com/watch?v=EGXsjfnwWkk">Demo Video</a>
+            <img src={digifarmImage} alt="digifarm Logo" className="flexible-image" />
           </ul>
+          
           </div>
           </div>
         </section>

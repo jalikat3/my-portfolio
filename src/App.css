@@ -13,7 +13,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.h2{
+  justify-self: "center";
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -91,6 +93,8 @@
 .left-content, .right-content {
   width: 100%; /* Adjust the width of the content divs */
   flex: 1;
+  margin-right:5%;
+  margin-left:5%;
 }
 .job {
   display: flex;
@@ -164,6 +168,7 @@ li.image-container {
   flex: 1; /* Allow the image to grow and shrink within the container */
   max-width: 100%; /* Ensure the image does not exceed its original size */
   max-height: 100%; /* Ensure the image does not exceed its original size */
+  padding-right: 5%;
 }
 footer{
   padding:10px;
